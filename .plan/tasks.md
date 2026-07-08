@@ -46,16 +46,16 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 3. Utilitários (`utils/`)
 
-- [ ] **3.1 Utilitário de formatação de data em português**
+- [x] **3.1 Utilitário de formatação de data em português**
   Ver PRD § "Sidebar" (formato `quinta-feira, 02 de julho de 2026`) e § "Detalhes Técnicos".
   Deve considerar o timezone retornado pelo geocoding.
   **Critério de aprovação:** dado um timezone e uma data conhecida, a função retorna a string no formato `dia-da-semana, DD de mês de AAAA` em português.
 
-- [ ] **3.2 Utilitário de direção do vento (grau → cardeal)**
+- [x] **3.2 Utilitário de direção do vento (grau → cardeal)**
   Ver PRD § "Área principal" (velocidade e direção do vento, grau e cardeal).
   **Critério de aprovação:** função recebe `wind_direction_10m` (graus) e retorna o ponto cardeal correspondente (ex: `0` → `N`, `90` → `L/E`, `180` → `S`, `270` → `O/W`), cobrindo pelo menos os 8 pontos cardeais principais.
 
-- [ ] **3.3 Utilitário de interpretação do WMO Weather Code**
+- [x] **3.3 Utilitário de interpretação do WMO Weather Code**
   Ver PRD § "Mapeamento de Weather Code" (tabela completa de códigos).
   **Critério de aprovação:** função recebe um `weather_code` numérico e retorna a descrição em português correspondente à tabela do PRD; código não mapeado tem um retorno padrão definido (ex: "Desconhecido").
 
