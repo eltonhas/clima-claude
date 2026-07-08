@@ -76,15 +76,15 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 5. Interface — estrutura e layout
 
-- [ ] **5.1 Montar layout base (fundo, card centralizado, sidebar + área principal)**
+- [x] **5.1 Montar layout base (fundo, card centralizado, sidebar + área principal)**
   Ver PRD § "Instruções Visuais" > "Layout".
   **Critério de aprovação:** página tem fundo cinza escuro, conteúdo centralizado com largura máxima de 800px, card branco com bordas bem arredondadas, dividido visualmente em sidebar e área principal.
 
-- [ ] **5.2 Layout responsivo mobile-first**
+- [x] **5.2 Layout responsivo mobile-first**
   Ver PRD § "Layout" (mobile-first, sidebar em cima em telas pequenas, à esquerda em telas maiores).
   **Critério de aprovação:** em viewport estreito (ex: 375px) o sidebar aparece acima da área principal; em viewport largo (ex: 1280px) o sidebar aparece à esquerda da área principal.
 
-- [ ] **5.3 Campo de busca com submit por botão e por Enter**
+- [x] **5.3 Campo de busca com submit por botão e por Enter**
   Ver PRD § "Requisitos Funcionais" (item 1).
   **Critério de aprovação:** digitar uma cidade e pressionar Enter dispara a busca; digitar uma cidade e clicar no botão de busca também dispara a busca.
 
