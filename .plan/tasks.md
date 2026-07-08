@@ -23,22 +23,22 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 2. Camada de serviços (OpenMeteo)
 
-- [ ] **2.1 Implementar `searchCity(name: string)` em `src/services/`**
+- [x] **2.1 Implementar `searchCity(name: string)` em `src/services/`**
   Ver PRD § "Requisitos Funcionais" (item 2) e § "Arquitetura de dados" (item 1).
   Deve consumir o endpoint de geocoding, extrair apenas os campos necessários e retornar `null` quando `results` for vazio ou a requisição falhar.
   **Critério de aprovação:** chamando `searchCity("São Paulo")` retorna um objeto com `name`, `latitude`, `longitude`, `country_code`, `timezone`; chamando com uma cidade inexistente (ex: `"asdkjaksjdkajsd"`) retorna `null`.
 
-- [ ] **2.2 Implementar `getWeather(latitude, longitude, timezone)` em `src/services/`**
+- [x] **2.2 Implementar `getWeather(latitude, longitude, timezone)` em `src/services/`**
   Ver PRD § "Requisitos Funcionais" (item 3) e § "Arquitetura de dados" (item 2).
   Deve consumir o endpoint de forecast, validar a presença de todas as propriedades obrigatórias em `current`, e retornar `null` se algo estiver ausente ou a requisição falhar.
   **Critério de aprovação:** chamando `getWeather` com coordenadas válidas retorna objeto com `current_units` e `current` contendo todas as propriedades obrigatórias listadas no PRD; se a resposta da API estiver sem algum campo obrigatório, a função retorna `null`.
 
-- [ ] **2.3 Validar parâmetros de entrada antes de requisitar**
+- [x] **2.3 Validar parâmetros de entrada antes de requisitar**
   Ver PRD § "Requisitos Funcionais" (item 4).
   `searchCity` e `getWeather` devem checar se os parâmetros necessários foram informados (não vazios/undefined) antes de fazer o `fetch`.
   **Critério de aprovação:** chamando as funções com parâmetros ausentes ou inválidos (ex: string vazia, `NaN`) retorna `null` (ou equivalente de "não encontrado") **sem** disparar nenhuma requisição de rede (verificável via mock/spy de `fetch`).
 
-- [ ] **2.4 Garantir que não há requisições fora da camada de serviços**
+- [x] **2.4 Garantir que não há requisições fora da camada de serviços**
   Ver PRD § "Requisitos Funcionais" (item 4).
   **Critério de aprovação:** busca no código-fonte (`grep`) por `fetch(` mostra ocorrências apenas dentro de `src/services/`.
 
