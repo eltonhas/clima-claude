@@ -63,12 +63,12 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 4. Estado e orquestração da busca
 
-- [ ] **4.1 Implementar o fluxo de busca (orquestração `searchCity` → `getWeather`)**
+- [x] **4.1 Implementar o fluxo de busca (orquestração `searchCity` → `getWeather`)**
   Ver PRD § "Fluxo de execução" e § "Tratamento de falhas".
   Deve chamar `searchCity`, e só chamar `getWeather` se o primeiro tiver sucesso; deve encerrar o loading em qualquer caminho (sucesso ou falha).
   **Critério de aprovação:** simulando cidade inexistente, o fluxo para após `searchCity` e exibe estado de erro sem chamar `getWeather`; simulando falha em `getWeather`, o fluxo exibe erro mesmo com `searchCity` bem-sucedido; em ambos os casos o loading é desativado ao final.
 
-- [ ] **4.2 Garantir que não há exibição de dados parciais**
+- [x] **4.2 Garantir que não há exibição de dados parciais**
   Ver PRD § "Tratamento de falhas".
   **Critério de aprovação:** se qualquer campo obrigatório estiver ausente na resposta, a UI cai no estado de erro/não encontrado, nunca renderizando o card de resultado com campos faltando.
 
