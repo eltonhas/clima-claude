@@ -172,9 +172,9 @@ Utilizar interpretação do WMO Weather Code para exibir o significado de `weath
 
 ## Critérios de Aceitação
 
-- [ ] Busca com duas requisições sequenciais funcionando.
-- [ ] Validação de parâmetros nas funções OpenMeteo.
-- [ ] UI com estados vazio, loading, sucesso e erro.
-- [ ] Layout centralizado com card branco e bordas arredondadas.
-- [ ] Exibição dos dados obrigatórios e interpretação do weather code.
-- [ ] Comportamento de "não encontrado" quando a cidade ou o clima não puder ser carregado.
+- [x] Busca com duas requisições sequenciais funcionando.
+- [x] Validação de parâmetros nas funções OpenMeteo.
+- [x] UI com estados vazio, loading, sucesso e erro.
+- [x] Layout centralizado com card branco e bordas arredondadas.
+- [x] Exibição dos dados obrigatórios e interpretação do weather code.
+- [x] Comportamento de "não encontrado" quando a cidade ou o clima não puder ser carregado.

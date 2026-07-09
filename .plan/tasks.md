@@ -116,10 +116,10 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 7. Validação final
 
-- [ ] **7.1 Revisar todos os Critérios de Aceitação do PRD**
+- [x] **7.1 Revisar todos os Critérios de Aceitação do PRD**
   Ver PRD § "Critérios de Aceitação".
   **Critério de aprovação:** cada item da checklist de aceitação do PRD foi manualmente verificado e pode ser marcado como concluído.
 
-- [ ] **7.2 Teste manual cross-device (mobile e desktop)**
+- [x] **7.2 Teste manual cross-device (mobile e desktop)**
   Ver PRD § "Layout" (mobile-first) e § "Requisitos de Sistema" (compatibilidade com navegadores modernos).
   **Critério de aprovação:** fluxo completo (busca → loading → sucesso/erro) testado e funcional em pelo menos uma viewport mobile e uma desktop, em um navegador moderno.
