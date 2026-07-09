@@ -92,23 +92,23 @@ Marque `[x]` quando a tarefa estiver concluída e o critério de aprovação ver
 
 ## 6. Interface — estados
 
-- [ ] **6.1 Estado vazio (empty state)**
+- [x] **6.1 Estado vazio (empty state)**
   Ver PRD § "Estado vazio".
   **Critério de aprovação:** ao carregar a aplicação pela primeira vez (sem busca realizada), só o campo de busca é exibido em destaque, com instrução clara para digitar o nome da cidade.
 
-- [ ] **6.2 Estado de loading**
+- [x] **6.2 Estado de loading**
   Ver PRD § "Loading" e § "Requisitos Funcionais" (item 1).
   **Critério de aprovação:** entre o disparo da busca e a resposta (geocoding + forecast), um indicador visual de carregamento é exibido; ele desaparece assim que o resultado (sucesso ou erro) é exibido.
 
-- [ ] **6.3 Estado de erro / não encontrado com nova tentativa**
+- [x] **6.3 Estado de erro / não encontrado com nova tentativa**
   Ver PRD § "Erro / não encontrado" e § "Tratamento de falhas".
   **Critério de aprovação:** ao buscar cidade inexistente ou ao falhar a consulta de clima, é exibida mensagem clara de erro; o usuário consegue fazer uma nova busca em seguida sem recarregar a página.
 
-- [ ] **6.4 Estado de sucesso — Sidebar**
+- [x] **6.4 Estado de sucesso — Sidebar**
   Ver PRD § "Sidebar (informações principais)".
   **Critério de aprovação:** ao buscar uma cidade válida, a sidebar exibe: temperatura atual, nome da cidade + `country_code`, data atual formatada em português no timezone da cidade, indicador de dia/noite (ícone sol/lua + texto) baseado em `is_day`, e a interpretação em português do `weather_code`.
 
-- [ ] **6.5 Estado de sucesso — Área principal**
+- [x] **6.5 Estado de sucesso — Área principal**
   Ver PRD § "Área principal (detalhes adicionais)".
   **Critério de aprovação:** a área principal exibe: humidade relativa, temperatura aparente, probabilidade de precipitação, e velocidade do vento com direção (grau + cardeal) — todos com as unidades vindas de `current_units`.
 

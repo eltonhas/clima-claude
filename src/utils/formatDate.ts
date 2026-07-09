@@ -7,5 +7,5 @@ export function formatDate(timezone: string, date: Date = new Date()): string {
     timeZone: timezone,
   }).format(date);
 
-  return formatted.replace(/^(\p{L})/u, (letter) => letter.toLowerCase());
+  return formatted.replace(/^(\p{L})/u, (letter) => letter.toUpperCase());
 }
